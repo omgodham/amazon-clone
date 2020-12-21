@@ -1,9 +1,9 @@
-
-
+import Header from "./Header"
+import "./App.css"
 function App() {
   return (
     <div className="App">
-    <h1>Omkar Here!</h1>
+      <Header />
     </div>
   );
 }
