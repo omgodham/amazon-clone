@@ -1,0 +1,29 @@
+.subtotal{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 10px;
+    background-color: #f3f3f3;
+    border: 1px solid #dddddd;
+    margin: 10px 20px;
+}
+.subtotal >button {
+    padding-top:10px ;
+    padding-bottom:10px;
+    background: #f0c14b;
+    border: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+}
+.subtotal >p>span{
+font-weight: 800;
+}
+
+.subtotal >small{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.input__checkbox{
+    margin-right:5px;
+}
