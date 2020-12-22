@@ -17,11 +17,15 @@ align-items: center;
 .product__price{
     font-weight: 800;
 }
+.product__rating{
+    display: flex;
+}
 .product__image{
     height: 200px;
     object-fit: contain;
 }
 .product__btn{
+    cursor: pointer;
     width: fit-content;
     margin: 10px auto;
     background-color: #f0c14b;
