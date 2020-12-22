@@ -3,6 +3,9 @@ import "./Product.css"
 import { useStateValue } from "./StateProvider";
 
 function Product({id,title,price,rating,image}) {
+
+
+
     const [{ basket }, dispatch] = useStateValue();
     
 //   const addToBasket = () => {
@@ -19,19 +22,19 @@ function Product({id,title,price,rating,image}) {
 //       });
 //   };
 
-const addToBasket = () => {
-    // dispatch the item into the data layer
-    dispatch({
-      type: "ADD_TO_BASKET",
-      item: {
-        id: id,
-        title: title,
-        image: image,
-        price: price,
-        rating: rating,
-      },
-    });
-  };
+// const addToBasket = () => {
+//     // dispatch the item into the data layer
+//     dispatch({
+//       type: "ADD_TO_BASKET",
+//       item: {
+//         id: id,
+//         title: title,
+//         image: image,
+//         price: price,
+//         rating: rating,
+//       },
+//     });
+//   };
   
     return (
         <div className="product">
@@ -48,7 +51,19 @@ const addToBasket = () => {
             </div>
             </div>
             <img className="product__image" src={image} />
-            <button className="product__btn" onClick={addToBasket}>Add To Basket</button>
+            <button onClick={()=>{
+                console.log("hey");
+                dispatch({
+                    type:'ADD_TO_BASKET',
+                     item:{
+                         id: id,
+                     title: title,
+            image: image,
+            price: price,
+            rating: rating
+         }
+     });
+            }}>Add to Basket</button>
         </div>
     );
 }

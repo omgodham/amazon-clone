@@ -24,7 +24,7 @@ align-items: center;
     height: 200px;
     object-fit: contain;
 }
-.product__btn{
+.product >button{
     cursor: pointer;
     width: fit-content;
     margin: 10px auto;
